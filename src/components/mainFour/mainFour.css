@@ -1,0 +1,137 @@
+.mainFour{
+    min-height: 80vh;
+    background-color: rgb(29, 29, 29);
+
+}
+
+.gridFour{
+    display: grid;
+    grid-template-columns: 
+    40% 25% 5% 25%;
+}
+
+.text{
+    padding: 0 3rem;
+    text-align: left;
+    font-weight: 200;
+    justify-self: center;
+    margin-top: 4rem;
+    color: white;
+}
+
+.btnsLeft{    
+    margin-top: 4rem;
+    grid-row-gap: 1rem;
+    row-gap: 2rem;
+    display: grid;
+    justify-self: center;
+}
+
+.btnRed{
+    background-color: rgb(218, 43, 57);
+    color: white;
+    box-shadow: rgb(218, 43, 57) 1px 1px 25px 0px;
+    border-radius: 10px;
+    height: 10vh;
+    width: 17vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.arrowCenter{
+    margin-top: 4.5rem;
+    grid-row-gap: 1rem;
+    row-gap: 2rem;
+    display: grid;
+    justify-self: center;
+}
+
+.arrow{
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    box-shadow: black 0 0 20px 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.downarrow{
+    display: none;
+}
+.arrow img{
+    height: 3vh;
+    justify-self: center;
+    align-self: center;
+}
+
+.btnsRight{    
+    margin-top: 4rem;
+    grid-row-gap: 1rem;
+    row-gap: 2rem;
+    display: grid;
+    justify-self: center;
+}
+
+.btnGreen{
+    background-color: rgb(61, 220, 151);
+    color: white;
+    box-shadow: rgb(61, 220, 151) 1px 1px 25px 0px;
+    border-radius: 10px;
+    height: 10vh;
+    width: 17vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+@media screen and (max-width:991px){
+    .mainFour{
+        min-height: 170vh;
+    }
+    .gridFour{
+        grid-template-columns: auto;
+    }
+    .text{
+        text-align: center;
+    }
+    .text p{
+        width: 100%;
+        padding: 1rem;
+    }
+    .btnsLeft{
+        width: 100%;
+    }
+    .btnRed{
+        width: 90%;
+        justify-self: center;
+   
+    }
+    .btnsRight{
+        width: 100%;
+    }
+    .btnGreen{
+        width: 90%;
+        justify-self: center;
+   
+    }
+    .arrow{
+        display: none;
+    }
+    .downarrow{
+        border-radius: 50%;
+        height: 8vh;
+        width: 8vh;
+        box-shadow: black 0 0 20px 1px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .downarrow img{
+        transform: rotate(90deg);
+    }
+}

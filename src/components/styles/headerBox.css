@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+.headerBox{
+    margin-top: -50px;
+}
+
+.tab{
+    display: flex;
+    padding: 1rem;
+    color:rgb(4, 155, 207) ;
+    margin: 12rem 10rem 0rem 65rem;
+    background-color: rgb(28 45 75);    
+    height: 2.5rem;
+    width: 15%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tab p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.checkmark {
+    position: relative;
+    width: 7%;
+    height: 12px;
+    background-color: #eee;
+    border-radius: 50%;
+    display: flex;
+  }
+
+  .tab input:checked ~ .checkmark{
+      border: 2px solid white;
+      background-color: rgb(0, 174, 239);
+  }
+
+
+.box{
+    padding: 40px;
+    width: 34%;
+    height: 40vh;
+    background-color: white;
+    margin: 0rem 10rem 0rem 50rem;
+    border-radius: 10px;
+}
+
+.line{
+    position: relative;
+    top: -1rem;
+    left: 3rem;
+    width: 75%;
+    height: 2px;
+    background-color:rgb(0, 174, 239) ;
+}
+
+.boxText{
+    font-weight: 600;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btns{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 40px 40px;
+    grid-column-gap: 20px ;
+    grid-row-gap:15px ;
+}
+
+.btn{
+    border: 1.99px solid rgb(28, 45, 75);
+    border-radius: 12px;
+    padding-top: 10px ;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: rgb(28 45 75);
+    cursor: pointer;
+
+}
+
+.btn:hover{
+    color: white;
+    background-color: rgb(28, 45, 75);
+}
+
+.review{
+    position: absolute;
+    width: 20%;
+    margin-top: 2rem;
+    margin-left: 45rem;
+}
+
+.reviewImg{
+    width: 15%;
+    background-color: rgba(153, 151, 138, 0.603);
+    border: 1px solid rgb(28, 45, 75);
+    border-radius: 50%;
+}
+
+.RI2{
+    position: relative;
+    right: 1.2rem;
+}
+
+.RI3{
+    position: relative;
+    right: 2.4rem;
+}
+
+.star{
+    position: relative;
+    left: 4.5rem;
+    bottom: 2.7rem;
+}
+.star img{
+    width: 5%;
+}
+.star p{
+    position: relative;
+    color: white;
+    left: -0.7rem;
+    top: 0.2rem;
+}
+
+
+@media screen and (max-width:991px){
+    .headerBox{
+        margin-top: -4rem;
+        height: 85vh;
+    }
+    .box{
+        z-index: 0;
+        margin-left: 1.5rem;
+        width: 91%;
+        height: 33vh;
+        margin-top: 15.5rem;
+    }
+    .tab{
+        position: relative;
+        left: -56rem;
+        top: 15.5rem;
+        height: 3.5rem;
+        width: 52%;
+    }
+    .review{
+        position: relative;
+        left: 1rem;
+    }
+    .RI1{
+        left: -45rem;
+        width: 75%;
+        position: relative;
+    }
+    .RI2{
+        left: -43.5rem;
+        top: -4.4rem;
+        width: 75%;
+        position: relative;
+    }
+    .RI3{
+        left: -42rem;
+        top: -8.8rem;
+        width: 75%;
+        position: relative;
+    }
+
+    .star{
+        position: relative;
+        left: -37rem;
+        bottom: 13rem;
+    }
+    .star img{
+        width: 20%;
+    }
+}

@@ -1,0 +1,108 @@
+.mainSix{
+    background: linear-gradient(to right top, #0c53b1 50%, #56CCF2);
+    min-height: 80vh;
+}
+
+.gridSix{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 10rem 5rem;
+    text-align: left;
+}
+
+.leftSix p{
+    width: 50% ;
+}
+
+.rightSix{
+    width: 30vw;
+    justify-self: start;
+    height: auto;
+}
+
+.rightSix .tab{
+    width: 51%;
+    margin: 0;
+    position: relative;    
+    left: 11rem;
+}
+.rightSix .tab p{
+    font-size: 0.8rem;
+    margin-left: 1rem;
+}
+.rightSix .box{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+.rightSix .btns .btn{
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+
+.rightSix .review{
+        margin-left: 0;
+}
+.rightSix .star{
+    margin-left: 1.5rem;
+    bottom: 3.5rem;
+}
+
+.rightSix .star p{
+    left: 0;
+}
+
+@media screen and (max-width:991px){
+    .mainSix{
+        background: linear-gradient(to right top, #0c53b1 40%, #2975da, #1a9dc9, #56CCF2);       
+    }
+
+    .gridSix{
+        width: 100vw;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: auto;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .leftSix h2{
+        color: white;
+
+    }
+
+    .leftSix p{
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .rightSix{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .rightSix .tab{
+        left: 10rem;
+    top: 10rem;
+    width: 13rem;
+    }
+
+
+    .rightSix .box{
+        width: 100%;
+        margin-top: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rightSix .box .line{
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

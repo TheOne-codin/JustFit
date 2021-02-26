@@ -1,0 +1,136 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.mainThree{
+    background-color: rgb(31, 38, 57);
+    min-height: 100vh;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.mainGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bigCircle{
+    background-color: #1866ccea;
+    border-radius: 50%;
+    width: 30rem;
+    height: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+}
+
+.bigCircle img{
+    height: inherit;
+}
+
+
+.mainThree h1{
+    color: white;
+    width: 85%;
+    font-size: 2rem;
+    justify-self: start;
+    text-align: left;
+}
+
+.dropDown{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.dropdownBox{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 1rem;
+    width: 30vw;
+    height: auto;
+    border-radius: 1rem;
+    background: #fff;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.span{
+    justify-self: start;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.dropdownp{
+ display: none;
+ transition: all 0.5s ease-out;
+}
+.active{
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.mainbtn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (max-width:991px){
+
+    .mainThree{
+        background-color: rgb(31, 38, 57);
+        min-height: 100vh;
+        padding-top: 5rem;
+    }
+    .mainGrid{
+        grid-template-columns: auto;
+    }
+    
+    .bigCircle{
+        background-color: #1866ccea;
+        border-radius: 50%;
+        width: 20rem;
+        height: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1.5rem;
+        margin-top: 3.5rem;
+    }
+
+    
+    .mainThree h1{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: white;
+        width: 18rem;
+        font-size: 1.2rem;
+    }
+    .dropdownBox{
+        
+    justify-self: center;
+    width: 95%;
+
+    }
+
+    .span{
+        transition: all 0.5s ease-out;
+        font-size: 1.2rem;
+    }
+    .mainbtn{
+    margin-left: auto;
+    margin-right: auto;
+}
+}

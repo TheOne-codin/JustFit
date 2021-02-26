@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    background-color: lawngreen;
+    width: 1rem;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: lightcoral;
+    border-radius: 10px;
+    height: 3rem;
+    width: 1rem;
+}
+
+.topheader{
+    color: wheat;
+    background-color:rgb(23, 61, 110);
+    height: 2rem;
+    padding-top: 0.4rem;
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    background: linear-gradient(to right bottom, #0c53b1 25%, #56CCF2);
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav{
+    display: flex;
+    position: relative;
+    top: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    margin-left: -5.5rem;
+}
+
+.logo img{
+    width: 20%;
+}
+
+.side-btn{
+    padding-top: 0.6rem;
+    background-color: rgb(28 45 75);
+    box-shadow: rgb(27 75 187)1px 1px 7px 1px;
+    margin-right: 2.5rem;
+    height: 2rem;
+    width: 12rem;
+    border-radius: 25px;
+    color: white;
+    font-size: .8rem;
+    font-weight: 200;
+    font-family: 'Poppins', sans-serif;
+}
+
+.man{
+    display: inline;
+    position: absolute;
+    left: 0;
+    margin-top: -9.45rem;
+    margin-left: 7rem;
+    height: 771px;
+}
+
+.playbtn{
+
+    position: absolute;
+    left: 0;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    background:linear-gradient(to right, #0d6ae2 50%, #56CCF2);
+    border-radius: 50%;
+    height: 70%;
+    width: 16%;
+
+}
+
+.btnimg{
+    position: absolute;
+    top: 0.7rem;
+    left: 0.8rem;
+    height: 1rem;
+}
+
+.btn-on-man{
+    position: absolute;
+    margin-top: 31rem;
+    margin-left: 7rem;
+    background-color:rgb(28, 45, 75);
+    height: 3.5rem;
+    width: 15rem;
+    border-radius: 10px;
+    box-shadow: rgb(28, 45, 75) 0px 6px 44px 1px;
+}
+
+.btn-on-man p{
+    font-family:'Poppins', sans-serif ;
+    position: relative;
+    top: 1.1rem;
+    left: 0.7rem;
+    color: rgb(3, 164, 220);
+}
+
+@media screen and (max-width:991px){
+.topheader{
+    font-size: 0.8rem;
+}
+
+
+    .side-btn{
+    margin-right: 0.5rem;
+}
+
+    .man{
+    margin-top: -3rem;
+    margin-left: 5rem;
+    height: 30rem;
+
+}
+
+.btn-on-man{
+    display: none;
+}
+
+
+}
